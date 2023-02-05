@@ -1,0 +1,258 @@
+html {
+    scroll-behavior: initial;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.landing {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.landing__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.landing__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    padding: 0 2rem;
+    text-shadow: 0 0 10px #000;
+}
+
+.landing__content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.landing__content p {
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.landing__content button {
+    padding: 1rem 2rem;
+    border: none;
+    background: #ff3b3b;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.reasons__tagline {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    padding: 0 2rem;
+    text-shadow: 0 0 10px #000;
+    position: relative;
+    z-index: -10;
+}
+
+.reasons__tagline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 15rem;
+    background: #ff3b3b;
+    right: 85%;
+    top: 0;
+}
+
+.reasons__tagline span {
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+}
+
+.reasons__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    width: 60%;
+    height: 100%;
+    padding: 0 2rem;
+    text-shadow: 0 0 10px #000;
+}
+
+.reason {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.reason h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.reason p {
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.recommendations {
+    z-index: 3;
+    background: #121212;
+    padding: 3rem;
+    height: 100vh;
+}
+
+.recommend__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.anime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-width: 220px;
+    min-height: 340px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-shadow: 0 0 10px #000;
+    cursor: pointer;
+}
+
+.anime img {
+    width: 220px;
+    height: 340px;
+    border-radius: 5px;
+}
+
+.anime p {
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 60%;
+    padding: 0 2rem;
+    text-shadow: 0 0 10px #000;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.comment button {
+    padding: 1rem 2rem;
+    border: none;
+    background: #ff3b3b;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.progress {
+    position: fixed;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    justify-content: left;
+    z-index: 1000;
+}
+
+.progress__thumb {
+    background: #ff3b3b;
+    height: 100%;
+}
+
+.form {
+    width: 50%;
+}

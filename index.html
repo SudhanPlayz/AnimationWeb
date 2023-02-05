@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagine a website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="progress">
+      <div class="progress__thumb"></div>
+    </div>
+    <section class="landing">
+      <div class="landing__overlay"></div>
+      <div id="snow"></div>
+      <div class="landing__content">
+        <h1>Imagine a website</h1>
+        <p>
+          I'm learning to create animation in website using some sussy libraries
+          like GSAP and Lenis. I'm also learning to use them. Scroll down to see
+          what I've done so far. hehe
+        </p>
+        <button onclick="window.lesGo()">Les go</button>
+      </div>
+    </section>
+    <section id="reasons" class="reasons">
+      <div class="reasons__tagline">
+        <span>Why you</span>
+        <span>should watch</span>
+        <span>anime?</span>
+      </div>
+      <div class="reasons__content">
+        <div class="reason">
+          <h2>You don't have a life</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+            voluptatum quos quidem quas nesciunt. Quisquam, quae.
+          </p>
+        </div>
+
+        <div class="reason">
+          <h2>You don't have a girlfriend</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+            voluptatum quos quidem quas nesciunt. Quisquam, quae.
+          </p>
+        </div>
+
+        <div class="reason">
+          <h2>You don't have a gud pc</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptate, quod, quia, voluptates quae voluptatibus quibusdam
+            voluptatum quos quidem quas nesciunt. Quisquam, quae.
+          </p>
+        </div>
+
+        <div class="reason">
+          <h2>Don't worry</h2>
+          <p>
+            You still got enough time to watch some anime. Go and watch em now
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="recommendations">
+      <h1>Here are my recommendations. Choose one and watch it now</h1>
+      <div class="recommend__content">
+        <div class="anime">
+          <img src="posters/your_name.png" />
+          <p>Your name.</p>
+        </div>
+        <div class="anime">
+          <img src="posters/weathering_with_you.png" />
+          <p>Weathering With You</p>
+        </div>
+        <div class="anime">
+          <img src="posters/demon_slayer.png" />
+          <p>Demon Slayer</p>
+        </div>
+        <div class="anime">
+          <img src="posters/eighty_six.png" />
+          <p>Eighty Six</p>
+        </div>
+        <div class="anime">
+          <img src="posters/attack_on_titan.png" />
+          <p>Attack on Titan</p>
+        </div>
+        <div class="anime">
+          <img src="posters/sword_art_online.png" />
+          <p>Sword Art Online</p>
+        </div>
+        <div class="anime">
+          <img src="posters/spy_x_family.png" />
+          <p>Spy X Family</p>
+        </div>
+        <div class="anime">
+          <img src="posters/lycoris_recoil.png" />
+          <p>Lycoris Recoil</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h1>How was the scroll? Did you like it?</h1>
+      <p>Let me know in the comments</p>
+
+      <div class="comment">
+        <h2>Send your comment</h2>
+        <p>
+          Your comment will sent to my secret discord server via webhook. Don't
+          spam it ;-;
+        </p>
+
+        <div class="form">
+          <input id="name" type="text" placeholder="Your name" />
+          <textarea id="content" placeholder="Your comment"></textarea>
+          <button onclick="window.send()">Send</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
