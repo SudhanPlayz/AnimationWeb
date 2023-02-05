@@ -37,14 +37,14 @@ const section2 = document.querySelector(".reasons");
 
 timeline.fromTo(tagline,
     {
-        y: "10vh"
+        y: "10vh",
     },
     {
-        y: "160vh",
-        duration: 1.2,
-        ease: 'none'
-    },
-    0
+        y: "150vh",
+        duration: 1,
+        ease: 'sin.out',
+        pin: true,
+    }
 )
 
 ScrollTrigger.create({
