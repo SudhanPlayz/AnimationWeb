@@ -128,7 +128,7 @@ window.send = function () {
         return;
     }
 
-    let webhook = "https://discord.com/api/webhooks/1071689187163643994/mVnKJiKlg1oWpXN23vuZU2yC03BOu4zmUk-QYGXPMXH2YnVl-uRMzgcPRzHNoTs-ShBL"
+    let webhook = "https://discord.com/api/webhooks/1326027606784479392/rGSLIJSJWWFezUz8iXYZ7WDi8HFHy-44IsdWaCLginmDp56xEERzl2zysChT7ZpFO3nf"
 
     let data = {
         content,
